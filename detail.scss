@@ -1,0 +1,51 @@
+.title {
+  width: 100%;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  display:inline;
+  border-bottom:3px solid #BED23C;
+  border-width: 100%;
+}
+.genero {
+  width: 100%;
+  color: #828282;
+  font-family:  sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 95px;
+  display:inline;
+  
+}
+.detail {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 36px;
+  color: $equalizer-grey;
+  strong {
+    color: $equalizer-black;
+  }
+}
+
+.cover{
+  margin :24px 50px 80px 30px;
+}
+
+.rectangle-1{
+  height: 425px;
+  width: 900px;
+  background-color: #FFF;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  margin :15px 0 0 15px;
+}
+.badge {
+  height: 118.57px;
+  width: 84.53px;
+  transform: rotate(15deg);
+  margin-left:-95px;
+}
+h1{
+  width: 100%;
+}
