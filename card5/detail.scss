@@ -1,0 +1,54 @@
+.section{
+  display: flex;
+  justify-content: center;
+}
+
+.detail{
+  display: grid;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(4,1fr);
+  padding: 0 150px;
+}
+
+.rectangle-1{
+  height: 300px;
+  width: 198px;
+  background-color: #FFF;
+  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  margin :36px 36px 18px 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.titulo-del-libro {
+  height: 15px;
+  width: 159px;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  display: inline-flex;
+  margin-left: 28px;
+}
+
+.autor-del-libro {
+  height: 14px;
+  width: 159px;
+  color: #828282;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 8px;
+  display: inline-flex;
+  margin-left: 28px;
+}
+
+.cover{
+  height: 200px;
+  width: 142px;
+  margin-top: 28px;
+}
