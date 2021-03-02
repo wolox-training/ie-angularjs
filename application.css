@@ -84,47 +84,60 @@ li {
 
 .title {
   height: 39px;
-  width: 210px;
+  width: 410px;
   color: #000;
-  font-family: sans-serif;
+  font-family: Roboto;
   font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
-  display: inline;
-  border-bottom: 3px solid #BED23C; }
+  line-height: 28px;
+  display: inline-flex; }
 
-.genero {
-  height: 3px;
+.genre {
+  height: 30px;
   width: 98px;
   color: #828282;
-  font-family: sans-serif;
+  font-family: Roboto;
   font-size: 24px;
   font-weight: 700;
-  line-height: 95px;
-  display: inline; }
+  line-height: 28px;
+  display: inline-flex; }
+
+.details {
+  margin-top: 50px; }
 
 .detail {
   font-size: 20px;
-  display: block;
+  display: flex;
   margin-bottom: 36px;
-  color: #999; }
+  color: #999;
+  font-family: Roboto; }
   .detail strong {
-    color: #000; }
+    color: #000;
+    font-family: Roboto;
+    padding-right: 8px; }
 
 .cover {
-  margin: 24px 50px 80px 30px; }
+  margin: 24px 70px 80px 30px; }
 
 .rectangle-1 {
   height: 425px;
   width: 900px;
   background-color: #FFF;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
-  margin: 15px 0 0 15px; }
+  margin: 15px 0 0 150px; }
 
 .badge {
   height: 118.57px;
   width: 84.53px;
   transform: rotate(15deg);
-  margin-left: -95px; }
+  position: absolute;
+  margin-left: 246px; }
+
+.border {
+  border-bottom: 4px solid #BED23C;
+  margin-left: 356px;
+  margin-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 10px; }
 
 /*# sourceMappingURL=application.css.map */

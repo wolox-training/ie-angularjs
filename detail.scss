@@ -1,51 +1,72 @@
+$text-color:#000;
+$background-color:#FFF;
+$border-color:#BED23C;
+$font:Roboto;
+
 .title {
-  width: 100%;
-  color: #000;
-  font-family: sans-serif;
+  height: 39px;
+  width: 410px;
+  color: $text-color;
+  font-family: $font;
   font-size: 32px;
   font-weight: 700;
-  line-height: 38px;
-  display:inline;
-  border-bottom:3px solid #BED23C;
-  border-width: 100%;
+  line-height: 28px;
+  display:inline-flex;
+
 }
-.genero {
-  width: 100%;
-  color: #828282;
-  font-family:  sans-serif;
+$text-color:#828282;
+
+.genre {
+  height: 30px;
+  width: 98px;
+  color: $text-color;
+  font-family: $font;
   font-size: 24px;
   font-weight: 700;
-  line-height: 95px;
-  display:inline;
+  line-height: 28px;
+  display:inline-flex;
+
+}
+.details{
+  margin-top: 50px;
   
 }
 .detail {
+  
   font-size: 20px;
-  display: block;
+  display: flex;
   margin-bottom: 36px;
   color: $equalizer-grey;
+  font-family: $font;
   strong {
     color: $equalizer-black;
+    font-family: $font;
+    padding-right: 8px;
   }
 }
 
 .cover{
-  margin :24px 50px 80px 30px;
+  margin :24px 70px 80px 30px;
 }
 
 .rectangle-1{
   height: 425px;
   width: 900px;
-  background-color: #FFF;
+  background-color: $background-color;
   box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
-  margin :15px 0 0 15px;
+  margin :15px 0 0 150px;
 }
-.badge {
+.badge{
   height: 118.57px;
   width: 84.53px;
   transform: rotate(15deg);
-  margin-left:-95px;
+  position:absolute;
+  margin-left:246px;
 }
-h1{
-  width: 100%;
+.border{
+  border-bottom:4px solid $border-color;
+  margin-left: 356px;
+  margin-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 10px;
 }
