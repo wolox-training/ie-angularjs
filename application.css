@@ -82,11 +82,13 @@ li {
   color: #999;
   opacity: 1; }
 
+html {
+  font-family: "Roboto", sans-serif; }
+
 .title {
   height: 39px;
   width: 410px;
   color: #000;
-  font-family: Roboto;
   font-size: 32px;
   font-weight: 700;
   line-height: 28px;
@@ -95,12 +97,12 @@ li {
 .genre {
   height: 30px;
   width: 98px;
-  color: #828282;
-  font-family: Roboto;
+  color: #999;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  display: inline-flex; }
+  display: inline-flex;
+  padding-left: 8px; }
 
 .details {
   margin-top: 50px; }
@@ -109,17 +111,15 @@ li {
   font-size: 20px;
   display: flex;
   margin-bottom: 36px;
-  color: #999;
-  font-family: Roboto; }
+  color: #999; }
   .detail strong {
     color: #000;
-    font-family: Roboto;
     padding-right: 8px; }
 
-.cover {
+.image-cover {
   margin: 24px 70px 80px 30px; }
 
-.rectangle-1 {
+.book-cover {
   height: 425px;
   width: 900px;
   background-color: #FFF;
@@ -127,8 +127,8 @@ li {
   margin: 15px 0 0 150px; }
 
 .badge {
-  height: 118.57px;
-  width: 84.53px;
+  height: 118px;
+  width: 84px;
   transform: rotate(15deg);
   position: absolute;
   margin-left: 246px; }

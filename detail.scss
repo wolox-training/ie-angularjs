@@ -1,69 +1,69 @@
-$text-color:#000;
 $background-color:#FFF;
 $border-color:#BED23C;
-$font:Roboto;
+$main-font:"Roboto";
+
+html { 
+  font-family: $main-font, sans-serif;
+}
 
 .title {
   height: 39px;
   width: 410px;
-  color: $text-color;
-  font-family: $font;
+  color: $equalizer-black;
   font-size: 32px;
   font-weight: 700;
   line-height: 28px;
   display:inline-flex;
-
 }
-$text-color:#828282;
 
 .genre {
   height: 30px;
   width: 98px;
-  color: $text-color;
-  font-family: $font;
+  color: $equalizer-grey;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   display:inline-flex;
+  padding-left: 8px;
+}
 
-}
-.details{
+.details {
   margin-top: 50px;
-  
 }
+
 .detail {
-  
   font-size: 20px;
   display: flex;
   margin-bottom: 36px;
   color: $equalizer-grey;
-  font-family: $font;
+
   strong {
     color: $equalizer-black;
-    font-family: $font;
     padding-right: 8px;
   }
 }
 
-.cover{
+.image-cover {
   margin :24px 70px 80px 30px;
 }
 
-.rectangle-1{
+.book-cover {
   height: 425px;
   width: 900px;
   background-color: $background-color;
   box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
   margin :15px 0 0 150px;
 }
-.badge{
-  height: 118.57px;
-  width: 84.53px;
+
+.badge {
+  height: 118px;
+  width: 84px;
   transform: rotate(15deg);
   position:absolute;
   margin-left:246px;
 }
-.border{
+
+.border {
   border-bottom:4px solid $border-color;
   margin-left: 356px;
   margin-right: 24px;
