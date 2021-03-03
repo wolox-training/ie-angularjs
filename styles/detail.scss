@@ -1,9 +1,13 @@
-.section{
+* {
+  font-family: $main-font, sans-serif;
+}
+
+.section {
   display: flex;
   justify-content: center;
 }
 
-.detail{
+.detail {
   display: grid;
   justify-content:space-around;
   flex-direction: row;
@@ -13,11 +17,11 @@
   grid-gap: 36px;
 }
 
-.rectangle-1{
+.book-container {
   height: 300px;
   width: 198px;
-  background-color: #FFF;
-  box-shadow: 4px 4px 10px 0 rgba(0,0,0,0.5);
+  background-color: $background-color;
+  box-shadow: 4px 4px 10px 0 $shadow;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -27,36 +31,33 @@
 .titulo-del-libro {
   height: 15px;
   width: 159px;
-  color: #000;
-  font-family: sans-serif;
+  color: $equalizer-black;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  display: inline-flex;
   margin-left: 28px;
 }
 
 .autor-del-libro {
   height: 14px;
   width: 159px;
-  color: #828282;
-  font-family: sans-serif;
+  color: $equalizer-grey;
   font-size: 14px;
   line-height: 8px;
-  display: inline-flex;
   margin-left: 28px;
 }
 
-.cover{
+.cover {
   height: 200px;
   width: 142px;
   margin-top: 28px;
 }
-.navbar{
-  display: inline-flex;
-  border-top: 6px solid #00ADEE;
+
+.navbar {
+  display: flex;
+  border-top: 6px solid $border-login;
   width: 100%;
-  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 4px 10px 0 $shadow;
   margin-bottom: 36px;
 
 }
@@ -64,17 +65,15 @@
 .logout {
   height: 18px;
   width: 63px;
-  color: #000;
-  font-family: sans-serif;
+  color: $equalizer-black;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 26px;
-  margin-left: 630px;
+  padding-left: 600px;
+  padding-top: 26px;
 }
 
-.logo-wolox{
+.logo-wolox {
   height: 70px;
   width: 212.42px;
-  margin-left: 466px;
-
+  margin-left: 476px;
 }

@@ -82,6 +82,9 @@ li {
   color: #999;
   opacity: 1; }
 
+* {
+  font-family: "Roboto", sans-serif; }
+
 .section {
   display: flex;
   justify-content: center; }
@@ -95,7 +98,7 @@ li {
   padding: 0 150px;
   grid-gap: 36px; }
 
-.rectangle-1 {
+.book-container {
   height: 300px;
   width: 198px;
   background-color: #FFF;
@@ -109,21 +112,17 @@ li {
   height: 15px;
   width: 159px;
   color: #000;
-  font-family: sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  display: inline-flex;
   margin-left: 28px; }
 
 .autor-del-libro {
   height: 14px;
   width: 159px;
-  color: #828282;
-  font-family: sans-serif;
+  color: #999;
   font-size: 14px;
   line-height: 8px;
-  display: inline-flex;
   margin-left: 28px; }
 
 .cover {
@@ -132,7 +131,7 @@ li {
   margin-top: 28px; }
 
 .navbar {
-  display: inline-flex;
+  display: flex;
   border-top: 6px solid #00ADEE;
   width: 100%;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
@@ -142,15 +141,14 @@ li {
   height: 18px;
   width: 63px;
   color: #000;
-  font-family: sans-serif;
   font-size: 18px;
   line-height: 21px;
-  margin-top: 26px;
-  margin-left: 630px; }
+  padding-left: 600px;
+  padding-top: 26px; }
 
 .logo-wolox {
   height: 70px;
   width: 212.42px;
-  margin-left: 466px; }
+  margin-left: 476px; }
 
 /*# sourceMappingURL=application.css.map */
