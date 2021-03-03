@@ -1,0 +1,76 @@
+* {
+	font-family: $main-font, sans-serif;
+}
+
+.border {
+	display: flex;
+	flex-direction: column;
+	margin-top: 24px;
+}
+
+.title {
+	height: 39px;
+	width: 310px;
+	color: $equalizer-black;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 38px;
+	margin-left: 60px;
+	margin-bottom: 12px;
+}
+
+.genre {
+	height: 30px;
+	width: 98px;
+	color: $equalizer-grey;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	padding-left: 8px;
+}
+
+.details {
+	border-top: 4px solid $border-color;
+	width: 540px;
+	padding-top: 36px;
+	margin-left: 52px;
+	display: flex;
+	flex-direction: column;
+}
+
+.detail {
+	height: 22px;
+	width: 374px;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 36px;
+	strong {
+		color: $equalizer-black;
+		padding-right: 8px;
+	}
+}
+
+.image-cover {
+	width: 261px;
+	height: 368px;
+	margin-left: 24px;
+	margin-top: 24px;
+}
+
+.book-cover {
+	height: 425px;
+	width: 900px;
+	background-color: $background-color;
+	box-shadow: 4px 4px 10px 0 $shadow;
+	margin: 15px 0 0 150px;
+	display: flex;
+}
+
+.badge {
+	height: 118px;
+	width: 84px;
+	transform: rotate(15deg);
+	position: absolute;
+	left: 384px;
+	top: 20px;
+}

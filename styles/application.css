@@ -82,17 +82,23 @@ li {
   color: #999;
   opacity: 1; }
 
-html {
+* {
   font-family: "Roboto", sans-serif; }
+
+.border {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px; }
 
 .title {
   height: 39px;
-  width: 410px;
+  width: 310px;
   color: #000;
   font-size: 32px;
   font-weight: 700;
-  line-height: 28px;
-  display: inline-flex; }
+  line-height: 38px;
+  margin-left: 60px;
+  margin-bottom: 12px; }
 
 .genre {
   height: 30px;
@@ -101,43 +107,46 @@ html {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  display: inline-flex;
   padding-left: 8px; }
 
 .details {
-  margin-top: 50px; }
+  border-top: 4px solid #BED23C;
+  width: 540px;
+  padding-top: 36px;
+  margin-left: 52px;
+  display: flex;
+  flex-direction: column; }
 
 .detail {
+  height: 22px;
+  width: 374px;
   font-size: 20px;
-  display: flex;
-  margin-bottom: 36px;
-  color: #999; }
+  line-height: 24px;
+  margin-bottom: 36px; }
   .detail strong {
     color: #000;
     padding-right: 8px; }
 
 .image-cover {
-  margin: 24px 70px 80px 30px; }
+  width: 261px;
+  height: 368px;
+  margin-left: 24px;
+  margin-top: 24px; }
 
 .book-cover {
   height: 425px;
   width: 900px;
   background-color: #FFF;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
-  margin: 15px 0 0 150px; }
+  margin: 15px 0 0 150px;
+  display: flex; }
 
 .badge {
   height: 118px;
   width: 84px;
   transform: rotate(15deg);
   position: absolute;
-  margin-left: 246px; }
-
-.border {
-  border-bottom: 4px solid #BED23C;
-  margin-left: 356px;
-  margin-right: 24px;
-  padding-top: 24px;
-  padding-bottom: 10px; }
+  left: 384px;
+  top: 20px; }
 
 /*# sourceMappingURL=application.css.map */
