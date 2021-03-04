@@ -2,12 +2,12 @@
 	font-family: $main-font, sans-serif;
 }
 
-.section{
+.main-container {
   display: flex;
   justify-content: center;
 }
 
-.detail{
+.detail {
   display: grid;
   justify-content:space-around;
   flex-direction: row;
@@ -16,7 +16,7 @@
   padding: 0 150px;
 }
 
-.book{
+.book {
   height: 300px;
   width: 198px;
   background-color: $background-color;
@@ -28,7 +28,7 @@
   flex-wrap: wrap;
 }
 
-.titulo-del-libro {
+.book-title {
   height: 15px;
   width: 159px;
   color: $equalizer-black;
@@ -38,7 +38,7 @@
   margin-left: 28px;
 }
 
-.autor-del-libro {
+.book-authortitulo-del-libro {
   height: 14px;
   width: 159px;
   color: $equalizer-grey;
@@ -47,7 +47,7 @@
   margin-left: 28px;
 }
 
-.cover{
+.cover {
   height: 200px;
   width: 142px;
   margin-top: 28px;
