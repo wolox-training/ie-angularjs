@@ -5,6 +5,7 @@
 .main-containter {
   display: flex;
   justify-content: center;
+  
 }
 
 .detail {
@@ -26,6 +27,11 @@
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+  transition: transform;
+}
+
+.book-container:hover{
+  transform: scale(1.04);
 }
 
 .book-title {
@@ -58,8 +64,7 @@
   border-top: 6px solid $border-login;
   width: 100%;
   box-shadow: 0 4px 10px 0 $shadow;
-  margin-bottom: 36px;
-
+  margin-bottom: 36px;  
 }
 
 .logout {
