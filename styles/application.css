@@ -85,7 +85,7 @@ li {
 * {
   font-family: "Roboto", sans-serif; }
 
-.section {
+.main-container {
   display: flex;
   justify-content: center; }
 
@@ -108,7 +108,7 @@ li {
   flex-direction: row;
   flex-wrap: wrap; }
 
-.titulo-del-libro {
+.book-title {
   height: 15px;
   width: 159px;
   color: #000;
@@ -117,7 +117,7 @@ li {
   line-height: 18px;
   margin-left: 28px; }
 
-.autor-del-libro {
+.book-author {
   height: 14px;
   width: 159px;
   color: #999;
