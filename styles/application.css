@@ -87,13 +87,12 @@ li {
 
 .main-containter {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 36px; }
 
 .detail {
   display: grid;
   justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
   grid-template-columns: repeat(4, 1fr);
   padding: 0 150px;
   grid-gap: 36px; }
@@ -108,9 +107,8 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   transition: transform; }
-
-.book-container:hover {
-  transform: scale(1.04); }
+  .book-container:hover {
+    transform: scale(1.04); }
 
 .book-title {
   height: 15px;
@@ -136,10 +134,10 @@ li {
 
 .navbar {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   border-top: 6px solid #00ADEE;
-  width: 100%;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
-  margin-bottom: 36px; }
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5); }
 
 .logout {
   height: 18px;
@@ -147,11 +145,12 @@ li {
   color: #000;
   font-size: 18px;
   line-height: 21px;
-  padding: 26px 0 0 600px; }
+  padding-top: 26px;
+  margin-right: 170px; }
 
 .logo-wolox {
   height: 70px;
   width: 212x;
-  margin-left: 476px; }
+  margin-left: 170px; }
 
 /*# sourceMappingURL=application.css.map */
