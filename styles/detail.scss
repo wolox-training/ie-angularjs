@@ -10,8 +10,6 @@
 .detail {
   display: grid;
   justify-content:space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
   grid-template-columns: repeat(4,1fr);
   padding: 0 150px;
 }
