@@ -2,7 +2,6 @@
 	font-family: $main-font, sans-serif;
 }
 
-
 .border {
 	grid-row-start: 1;
 }
@@ -91,7 +90,6 @@ a:before{
 
 }
 
-
 @media only screen and (width:1024px){
 	.border {
 		grid-column-start: 2;
@@ -126,7 +124,6 @@ a:before{
 		padding-top: 136px;
 		margin-left: 52px;
 	}
-	
 	
 	.detail {
 		height: 22px;
