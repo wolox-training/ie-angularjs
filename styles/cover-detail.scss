@@ -3,27 +3,27 @@
 }
 
 .border {
-	grid-row-start: 1;
+  grid-row-start: 1;
 }
 
 .title {
-	height: 39px;
-	width: 410px;
-	color: $equalizer-black;
-	font-size: 32px;
-	font-weight: 700;
-	line-height: 38px;
-	margin: 24px 0 12px 52px;
+  height: 39px;
+  width: 410px;
+  color: $equalizer-black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 24px 0 12px 52px;
 }
 
 .genre {
-	height: 30px;
-	width: 98px;
-	color: $equalizer-grey;
-	font-size: 24px;
-	font-weight: 700;
-	line-height: 28px;
-	padding-left: 8px;
+  height: 30px;
+  width: 98px;
+  color: $equalizer-grey;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-left: 8px;
 }
 
 .details {
@@ -81,16 +81,15 @@
 	padding-left: 30px;
 	flex-direction: row;
 }
-a:before{
-  content: url('/home/iencinas/Documentos/Training/card-7/styles/back-arrow-20.png');
+.back-button:before{
+  content: url('back-arrow-20.png');
   height: 20px;
   width: 20px;
-  display: flex;
 	padding-right: 5px;
 
 }
 
-@media only screen and (width:1024px){
+@media only screen and (width:$tablet-width){
 	.border {
 		grid-column-start: 2;
 	}
@@ -131,10 +130,6 @@ a:before{
 		font-size: 20px;
 		line-height: 24px;
 		margin-bottom: 36px;
-		strong {
-			color: $equalizer-black;
-			padding-right: 8px;
-		}
 	}
 	
 	.image-cover {
@@ -176,17 +171,16 @@ a:before{
 		padding-left: 30px;
 		flex-direction: row;
 	}
-	a:before{
-		content: url('/home/iencinas/Documentos/Training/card-7/styles/back-arrow-20.png');
+	.back-button:before{
+		content: url('back-arrow-20.png');
 		height: 20px;
 		width: 20px;
-		display: flex;
 		padding-right: 5px;
 	
 	}
 }	
 
-@media only screen and (max-width:1023px){
+@media only screen and (max-width:$mobile-width){
 	.title {
 		height: 39px;
 		width: 251px;
@@ -226,10 +220,6 @@ a:before{
 		font-size: 14px;
 		line-height: 24px;
 		margin-bottom: 18px;
-		strong {
-			color: $equalizer-black;
-			padding-right: 8px;
-		}
 	}
 	
 	.image-cover {
@@ -266,8 +256,8 @@ a:before{
 		top: 622px;
 		left: 143px;
 	}
-	a:before{
-		content: url('/home/iencinas/Documentos/Training/card-7/styles/back-arrow-20.png');
+	.back-button:before{
+		content: url('back-arrow-20.png');
 		height: 20px;
 		width: 20px;
 		padding-right: 5px;
