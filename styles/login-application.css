@@ -106,15 +106,14 @@ li {
   width: 252px;
   border-radius: 5px;
   background-color: #FFF;
-  margin: 8px 0 10px 24px; }
+  margin: 8px 0 10px 0; }
 
 .data {
   height: 22px;
   width: 41px;
   color: #000;
   font-size: 16px;
-  line-height: 24px;
-  margin-left: 24px; }
+  line-height: 24px; }
 
 .login {
   background-color: #BED23C;
@@ -134,11 +133,12 @@ li {
   background-color: #F4F4F4;
   border: 2px solid #BED23C;
   color: #BED23C;
-  cursor: pointer;
   font-size: 16px;
-  text-align: center; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
-.grey-border {
+.border {
   border-bottom: 2px solid #999;
   width: 252px;
   margin-left: 24px; }
