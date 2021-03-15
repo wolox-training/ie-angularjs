@@ -85,63 +85,78 @@ li {
 * {
   font-family: "Roboto", sans-serif; }
 
-.section {
+* {
+  font-family: "Roboto", sans-serif; }
+
+.main-container {
   display: flex;
   justify-content: center;
-  padding-top: 184px; }
+  margin-top: 36px; }
 
-.main-frame {
-  height: 400px;
-  width: 300px;
-  background-color: #F4F4F4;
-  border-top: 8px solid #00ADEE; }
+.detail {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 150px;
+  grid-gap: 36px; }
 
-.wolox-logo {
-  height: 70px;
-  width: 215px;
-  margin-left: 44px;
-  margin-top: 20px; }
-
-.forms {
-  height: 32px;
-  width: 252px;
-  border-radius: 5px;
+.book-container {
+  height: 300px;
+  width: 198px;
   background-color: #FFF;
-  margin: 8px 0 10px 24px; }
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: transform; }
+  .book-container:hover {
+    transform: scale(1.04); }
 
-.data {
-  height: 22px;
-  width: 41px;
-  color: #999;
+.book-title {
+  height: 15px;
+  width: 159px;
+  color: #000;
   font-size: 16px;
-  line-height: 24px;
-  margin-left: 24px; }
+  font-weight: 700;
+  line-height: 18px;
+  margin-left: 28px; }
 
-.login {
-  background-color: #BED23C;
-  color: #FFF;
-  margin: 24px 0 0 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  height: 32px;
-  width: 252px;
-  font-size: 16px; }
+.book-author {
+  height: 14px;
+  width: 159px;
+  color: #999;
+  font-size: 14px;
+  line-height: 8px;
+  margin-left: 28px; }
 
-.signup {
-  height: 32px;
-  width: 252px;
-  border-radius: 5px;
+.cover {
+  height: 200px;
+  width: 142px;
+  margin-top: 28px; }
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: #FFF;
-  border: 2px solid #BED23C;
-  color: #BED23C;
-  cursor: pointer;
-  margin-top: 16px;
-  font-size: 16px; }
+  border-top: 6px solid #00ADEE;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5); }
 
-.border {
-  border-top: 2px solid #999;
-  width: 252px;
-  margin: 16px 0 0 24px; }
+.logout {
+  height: 18px;
+  width: 63px;
+  color: #000;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 26px;
+  margin-right: 170px; }
+
+.logo-wolox {
+  height: 70px;
+  width: 212x;
+  margin-left: 170px; }
 
 /*# sourceMappingURL=application.css.map */
