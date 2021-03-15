@@ -1,266 +1,86 @@
 * {
-	font-family: $main-font, sans-serif;
+  font-family: $main-font, sans-serif;
 }
 
-.border {
-  grid-row-start: 1;
-}
-
-.title {
-  height: 39px;
-  width: 410px;
-  color: $equalizer-black;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38px;
-  margin: 24px 0 12px 52px;
-}
-
-.genre {
-  height: 30px;
-  width: 98px;
-  color: $equalizer-grey;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  padding-left: 8px;
-}
-
-.details {
-	border-top: 4px solid $border-color;
-	width: 540px;
-	padding-top: 36px;
-	margin-left: 52px;
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;;
+  
 }
 
 .detail {
-	height: 22px;
-	width: 394px;
-	font-size: 20px;
-	line-height: 24px;
-	margin-bottom: 36px;
-	strong {
-		color: $equalizer-black;
-		padding-right: 8px;
-	}
+  display: grid;
+  justify-content:space-around;
+  grid-template-columns: repeat(4,1fr);
+  padding: 0 150px;
+  grid-gap: 36px;
 }
 
-.image-cover {
-	width: 261px;
-	height: 368px;
-	margin-left: 24px;
-	margin-top: 24px;
+.book-container {
+  height: 300px;
+  width: 198px;
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $shadow;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  transition: transform;
+  &:hover{
+    transform: scale(1.04);
+  }
 }
 
-.book-cover {
-	height: 425px;
-	width: 900px;
-	background-color: $background-color;
-	box-shadow: 4px 4px 10px 0 $shadow;
-	margin: 30px 0 0 30px;
-	display: flex;
-}
 
-.badge {
-	height: $badge-height;
-	width: $badge-width;
-	transform: rotate(15deg);
-	position: absolute;
-	left: 250px;
-	top: 60px;
-}
-
-.back-button{
-  height: 20px;
-  width: 59px;
+.book-title {
+  height: 15px;
+  width: 159px;
   color: $equalizer-black;
-  font-size: 20px;
-  line-height: 24px;
-	display: flex;
-	padding-top: 5px;
-	padding-left: 30px;
-	flex-direction: row;
-}
-.back-button:before{
-  content: url('back-arrow-20.png');
-  height: 20px;
-  width: 20px;
-	padding-right: 5px;
-
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-left: 28px;
 }
 
-@media only screen and (width:$tablet-width){
-	.border {
-		grid-column-start: 2;
-	}
-	
-	.title {
-		height: 39px;
-		width: 410px;
-		color: $equalizer-black;
-		font-size: 32px;
-		font-weight: 700;
-		line-height: 38px;
-		margin: 20px 0 12px 49px;
-		display: flex;
-		flex-direction: column;
-		grid-column-start: 2;
-	}
-	
-	.genre {
-		height: 30px;
-		width: 98px;
-		color: $equalizer-grey;
-		font-size: 24px;
-		font-weight: 700;
-		line-height: 28px;
-		margin-left: 58px;
-	}
-	
-	.details {
-		border-top: 0;
-		width: 540px;
-		padding-top: 136px;
-		margin-left: 52px;
-	}
-	
-	.detail {
-		height: 22px;
-		width: 394px;
-		font-size: 20px;
-		line-height: 24px;
-		margin-bottom: 36px;
-	}
-	
-	.image-cover {
-		width: 261px;
-		height: 368px;
-		margin-left: 24px;
-		grid-column-start: 1;
-		margin-top: 125px;
-	}
-	
-	.book-cover {
-		height: 569px;
-		width: 853px;
-		background-color: $background-color;
-		box-shadow: 4px 4px 10px 0 $shadow;
-		margin: 30px 0 0 30px;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}
-	
-	.badge {
-		height: $badge-height;
-		width: $badge-width;
-		transform: rotate(15deg);
-		position: absolute;
-		left: 250px;
-		top: 140px;
-	}
-	
-	.back-button{
-		height: 20px;
-		width: 59px;
-		color: $equalizer-black;
-		font-size: 20px;
-		line-height: 24px;
-		display: flex;
-		padding-top: 5px;
-		padding-left: 30px;
-		flex-direction: row;
-	}
-	.back-button:before{
-		content: url('back-arrow-20.png');
-		height: 20px;
-		width: 20px;
-		padding-right: 5px;
-	
-	}
-}	
+.book-author {
+  height: 14px;
+  width: 159px;
+  color: $equalizer-grey;
+  font-size: 14px;
+  line-height: 8px;
+  margin-left: 28px;
+}
 
-@media only screen and (max-width:$mobile-width){
-	.title {
-		height: 39px;
-		width: 251px;
-		color: $equalizer-black;
-		font-size: 24px;
-		font-weight: 700;
-		line-height: 38px;
-		margin: 16px 0 0 78px;;
-		grid-row-start: 1;
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.genre {
-		height: 16px;
-		width: 63px;
-		color: $equalizer-grey;
-		font-size: 16px;
-		font-weight: 700;
-		line-height: 19px;
-		grid-row-start: 3;
-		margin:343px 0 20px 45px;
-	}
-	
-	.details {
-		border-top: 4px solid $border-color;
-		width: 300px;
-		margin: 374px 0 0 18px;
-		grid-row-start: 4;
-		padding-top: 10px;
+.cover {
+  height: 200px;
+  width: 142px;
+  margin-top: 28px;
+}
 
-	}
-	
-	.detail {
-		height: 22px;
-		width: 283px;
-		font-size: 14px;
-		line-height: 24px;
-		margin-bottom: 18px;
-	}
-	
-	.image-cover {
-		width: 212px;
-		height: 298px;
-		margin:0 62px 0 62px;
-	}
-	
-	.book-cover {
-		height: 570px;
-		width: 336px;
-		background-color: $background-color;
-		box-shadow: 4px 4px 10px 0 $shadow;
-    display:grid;
-		grid-template-rows: 71px 300px 53px 144px;
-		grid-template-columns: 1fr;	
-		
-	}
-	
-	.badge {
-		height: calc(#{$badge-height} * 0.7);
-		width: calc(#{$badge-width} *0.7);
-		transform: rotate(15deg);
-		margin: 20px 0 0 10px;
-	}
-	
-	.back-button{
-		height: 20px;
-		width: 59px;
-		color: $equalizer-black;
-		font-size: 20px;
-		line-height: 24px;
-		position: absolute;
-		top: 622px;
-		left: 143px;
-	}
-	.back-button:before{
-		content: url('back-arrow-20.png');
-		height: 20px;
-		width: 20px;
-		padding-right: 5px;
-	}
-	
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $white;
+  border-top: 6px solid $border-login;
+  box-shadow: 0 4px 10px 0 $shadow; 
+}
+
+.logout {
+  height: 18px;
+  width: 63px;
+  color: $equalizer-black;
+  font-size: 18px;
+  line-height: 21px;
+  padding-top: 26px;
+  margin-right: 170px;
+}
+
+.logo-wolox {
+  height: 70px;
+  width: 212x;
+  margin-left: 170px;
 }
