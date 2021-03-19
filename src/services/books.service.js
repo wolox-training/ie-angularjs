@@ -9,6 +9,7 @@ angular.module('app-bootstrap')
 
       return {
         getBooksList: () => booksList,
+        getBook:(bookId)=>booksList.find(({id})=> id === bookId)
       };
     }
   ]);
