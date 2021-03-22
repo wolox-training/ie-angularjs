@@ -9,7 +9,7 @@ angular.module('app-bootstrap')
       this.emailValidation = /^(?!.*\.\.)[^.][^\s@]+[^.]@[^\-][^\s@]+\.[^\s@]{2,}$/;;
       this.logo = logo;
       this.validForm = function() {
-        alert('form requires are ok!');
+        alert('Form requirements are ok!');
       };
     }]
   });

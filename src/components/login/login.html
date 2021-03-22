@@ -1,7 +1,7 @@
 <div class="section">
   <div class="main-frame">
     <img class="wolox-logo" ng-src="{{$ctrl.logo}}"  alt="Logo Wolox" />
-    <form novalidate name="login" class="border" ng-submit="login.$valid && $ctrl.formSubmit()">
+    <form novalidate name="login" class="login-border" ng-submit="login.$valid && $ctrl.validForm()">
       <label for="email" class="data">Email</label>
       <input name="userEmail" class ="forms" type="text" id="email" ng-model="$ctrl.user.email" ng-pattern="$ctrl.emailValidation" required/>
       <div ng-show="login.$submitted || login.userEmail.$touched">
