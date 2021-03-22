@@ -3,11 +3,7 @@ $mobile-width: 1023px;
 $badge-height: 118px;
 $badge-width: 84px;
 
-* {
-  font-family: $main-font, sans-serif;
-}
-
-.border {
+.cover-container {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
@@ -20,7 +16,7 @@ $badge-width: 84px;
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
-  margin:0 0 12px 60px;
+  margin: 0 0 12px 60px;
 }
 
 .genre-cover {
@@ -90,18 +86,16 @@ $badge-width: 84px;
   padding-top: 5px;
   padding-left: 30px;
   flex-direction: row;
-}
-a:before {
-  content: url('./../assets/back-arrow-20.png');
-  height: 20px;
-  width: 20px;
-  display: flex;
-  padding-right: 5px;
-
+  &:before {
+    content: url('./../assets/back-arrow-20.png');
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+  }
 }
 
 @media only screen and (width:$tablet-width){
-  .border {
+  .cover-container {
     grid-column-start: 2;
   }
   
@@ -186,15 +180,14 @@ a:before {
   	padding-top: 5px;
   	padding-left: 30px;
   	flex-direction: row;
+    &:before {
+      content: url('./../assets/back-arrow-20.png');
+      height: 20px;
+      width: 20px;
+      padding-right: 5px;
+    }
   }
-  a:before {
-  	content: url('./../assets/back-arrow-20.png');
-  	height: 20px;
-  	width: 20px;
-  	display: flex;
-  	padding-right: 5px;
-  
-  }
+
 }	
 
 @media only screen and (max-width:$mobile-width){
@@ -269,20 +262,19 @@ a:before {
   }
   
   .back-button {
-  	height: 20px;
-  	width: 59px;
-  	color: $strong-black;
-  	font-size: 20px;
-  	line-height: 24px;
-  	position: absolute;
-  	top: 622px;
-  	left: 143px;
+    height: 20px;
+    width: 59px;
+    color: $strong-black;
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    top: 622px;
+    left: 143px;
+    &:before {
+      content: url('./../assets/back-arrow-20.png');
+      height: 20px;
+      width: 20px;
+      padding-right: 5px;
+    }
   }
-
-  a:before {
-  	content: url('./../assets/back-arrow-20.png');
-  	height: 20px;
-  	width: 20px;
-  	padding-right: 5px;
-  }	
 }
