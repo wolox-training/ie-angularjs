@@ -1,66 +1,65 @@
 .section{
-    display: flex;
-    justify-content: center;
-    padding-top: 184px;
-  }
-  
-  .main-frame {
-    height: 400px;
-    width: 300px;
-    background-color: $background-grey;
-    border-top: 8px solid $border-login;
-  }
-  
-  .wolox-logo{
-    height: 70px;
-    width: 215px;
-    margin: 20px 0 10px 44px;
-  }
-  
-  .forms{
-    height: 32px;
-    width: 252px;
-    border-radius: 5px;
-    background-color: $white;
-    margin:8px 0 10px 0;
-  }
-  
-  .data{
-    height: 22px;
-    width: 41px;
-    color: $strong-black;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  .login{
-    background-color: $earls-green;
-    color: $white;
-    margin: 18px 0 16px 0;
-    cursor: pointer;
-    border-radius: 5px;
-    height: 32px;
-    width: 252px;
-    font-size: 16px;
-  }
-  
-  .signup{
-    width: 252px;
-    margin:16px 0 0 24px;
-    height: 32px;
-    border-radius: 5px;
-    background-color: $background-grey;
-    border: 2px solid $earls-green;
-    color:$earls-green;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login-border {
-    border-bottom: 2px solid $equalizer-grey;
-    width: 252px;
-    margin-left: 24px;
-  }
-  
+  display: flex;
+  justify-content: center;
+  padding-top: 184px;
+}
+
+.main-frame {
+  height: 400px;
+  width: 300px;
+  background-color: $background-grey;
+  border-top: 8px solid $border-login;
+}
+
+.wolox-logo{
+  height: 70px;
+  width: 215px;
+  margin: 20px 0 10px 44px;
+}
+
+.forms{
+  height: 32px;
+  width: 252px;
+  border-radius: 5px;
+  background-color: $white;
+  margin:8px 0 10px 0;
+}
+
+.data{
+  height: 22px;
+  width: 41px;
+  color: $strong-black;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.login{
+  background-color: $earls-green;
+  color: $white;
+  margin: 18px 0 16px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 32px;
+  width: 252px;
+  font-size: 16px;
+}
+
+.signup{
+  width: 252px;
+  margin:16px 0 0 24px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: $background-grey;
+  border: 2px solid $earls-green;
+  color:$earls-green;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-border {
+  border-bottom: 2px solid $equalizer-grey;
+  width: 252px;
+  margin-left: 24px;
+}
