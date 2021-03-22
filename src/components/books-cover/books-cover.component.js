@@ -7,7 +7,7 @@ angular.module('app-bootstrap')
   .component ('cover', {
       template : require('./books-cover.html'),
       controller: ['$stateParams', 'booksService', function ($stateParams, booksService) {
-        let bookId = parseInt($stateParams.bookId);
+        const bookId = parseInt($stateParams.bookId);
         this.bookCover = bookCover;
         this.badge = badge;
         this.book = booksService.getBook(bookId);
