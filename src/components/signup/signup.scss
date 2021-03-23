@@ -1,11 +1,11 @@
-.section{
+.signup-section{
   display: flex;
   justify-content: center;
   padding-top: 184px;
 }
 
-.main-frame {
-  height: 400px;
+.signup-main-frame {
+  height: 634px;
   width: 300px;
   background-color: $background-grey;
   border-top: 8px solid $border-login;
@@ -17,26 +17,27 @@
   margin: 20px 0 10px 44px;
 }
 
-.forms{
+.signup-forms{
   height: 32px;
   width: 252px;
   border-radius: 5px;
   background-color: $white;
-  margin:8px 0 8px 0;
+  margin:4px 0 4px 0;
 }
 
-.data{
+.signup-data{
   height: 22px;
-  width: 41px;
+  width: 200px;
   color: $strong-black;
   font-size: 16px;
   line-height: 24px;
+  padding-top: 16px;
 }
 
 .login{
   background-color: $earls-green;
   color: $white;
-  margin: 19  px 0 16px 0;
+  margin: 18px 0 16px 0;
   cursor: pointer;
   border-radius: 5px;
   height: 32px;
@@ -62,16 +63,4 @@
   border-bottom: 2px solid $equalizer-grey;
   width: 252px;
   margin-left: 24px;
-}
-.error-message{
-  position:absolute;
-}
-
-.password-data{
-  height: 22px;
-  width: 41px;
-  color: $strong-black;
-  font-size: 16px;
-  line-height: 24px;
-  padding-top: 13px;
 }
