@@ -21,8 +21,8 @@
       <label for="password" class="signup-data">Password</label>
       <input class ="signup-forms" type="password" id="password" name="userPassword" ng-model="user.password" ng-minlength= "8" ng-maxlength="52" ng-pattern="$ctrl.validPassword" required/>
       <div ng-show="signup.$submitted || signup.userPassword.$touched" >
-        <p class="error-message" ng-show="signup.userPassword.$error.minlength">La contraseña tiene un minimo de 8 caracteres</p>
-        <p class="error-message" ng-show="signup.userPassword.$error.minlength">La contraseña tiene un maximo de 52 caracteres</p>
+        <p class="error-message" ng-show="signup.userPassword.$error.minlength">La contraseña es muy corta</p>
+        <p class="error-message" ng-show="signup.userPassword.$error.maxlength">La contraseña es muy larga</p>
         <p class="error-message" ng-show="signup.$submitted && signup.userPassword.$error.required">Por favor ingrese su contraseña.</p>
         <p class="error-message" ng-show="signup.userPassword.$error.password">Por favor ingrese una contraseña válida.</p>
       </div>
