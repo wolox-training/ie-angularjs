@@ -22,6 +22,16 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
         url: '/books',
         component: 'books'
       })
+      .state('books-cover',
+      {
+        url:'/books/{bookId}',
+        component: 'cover'
+      })
+      .state('login',
+      {
+        url:'/login',
+        component: 'login'
+      });
 
     $urlRouterProvider.otherwise('/');
   }

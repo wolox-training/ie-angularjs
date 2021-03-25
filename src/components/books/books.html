@@ -1,9 +1,9 @@
 <div class="main-container">
     <div class="search">
-      <input type="text" ng-model="searchText" class="search-area" placeholder="Buscá un libro por titulo o autor ">
+      <input type="text" ng-model="searchText" class="search-area" placeholder="Buscá un libro por titulo o autor " >
     </div>
     <div class="detail">
-        <div class="book-container" ng-repeat="book in $ctrl.books | searchBook: searchText" >
+        <div class="book-container" ng-repeat="book in $ctrl.books | searchBook: searchText" ui-sref="books-cover({bookId: book.id})">
           <img class="cover"  ng-src='{{book.image_url || $ctrl.bookCover}}' alt="Portada" />
           <p class="book-title">{{book.title}}</p>
           <p class="book-author">{{book.author}}</p>
