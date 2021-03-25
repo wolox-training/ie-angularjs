@@ -1,0 +1,13 @@
+<a class="back-button" ui-sref="books" target="Self">Atras</a>
+<div class="book-cover">
+  <img class="badge" ng-src="{{$ctrl.badge}}" alt="badge">
+  <img class="image-cover" ng-src="{{ $ctrl.book.image_url || $ctrl.bookCover }}" alt="Book cover">
+  <div class="cover-container">
+    <h1 class="title-cover">{{$ctrl.book.title}}<span class="genre-cover">({{$ctrl.book.genre}})</span></h1>
+    <div class="details">
+      <p class="detail-cover"><strong>Autor del libro:</strong> {{$ctrl.book.author}}</p>
+      <p class="detail-cover"><strong>Editorial:</strong> {{$ctrl.book.publisher}}</p>
+      <p class="detail-cover"><strong>Año de publicación:</strong>{{$ctrl.book.year}}</p>
+    </div>
+  </div>
+</div>

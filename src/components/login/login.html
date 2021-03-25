@@ -1,0 +1,22 @@
+<div class="section">
+  <div class="main-frame">
+    <img class="wolox-logo" ng-src="{{$ctrl.logo}}"  alt="Logo Wolox" />
+    <form novalidate name="login" class="login-border" ng-submit="login.$valid && $ctrl.validForm()">
+      <label for="email" class="data">Email</label>
+      <input name="userEmail" class ="forms" type="text" id="email" ng-model="$ctrl.user.email" ng-pattern="$ctrl.emailValidation" required/>
+      <div ng-show="login.$submitted || login.userEmail.$touched">
+        <p class="error-message" ng-show="login.$submitted && login.userEmail.$error.required">Por favor ingrese su email.</p>
+        <p class="error-message" ng-show="login.userEmail.$error.pattern">Por favor ingrese un email válido.</p>
+      </div>
+      <label for="password" class="password-data">Password</label>
+      <input class ="forms" type="password" id="password" name="userPassword" ng-model="$ctrl.user.password" ng-minlength= "8" required/>
+      <div ng-show="login.$submitted || login.userPassword.$touched" >
+        <p class="error-message" ng-show="login.userPassword.$error.minlength">La contraseña es muy corta</p>
+        <p class="error-message" ng-show="login.$submitted && login.userPassword.$error.required">Por favor ingrese su contraseña.</p>
+        <p class="error-message" ng-show="login.userPassword.$error.password">Por favor ingrese una contraseña válida.</p>
+      </div>
+      <button class="login" type="submit">Login</button>
+    </form>
+    <a class ="signup" ui-sref="signup">Sign Up</a>
+  </div>
+</div>

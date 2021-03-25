@@ -1,0 +1,38 @@
+<div class="signup-section">
+  <div class="signup-main-frame">
+    <img class="wolox-logo" ng-src="{{$ctrl.logo}}"  alt="Logo Wolox" />
+    <form novalidate name="signup" class="login-border" ng-submit="signup.$valid && $ctrl.validForm()">
+      <label for="name" class="signup-data">Nombre</label>
+      <input id="name" name="userName" type="text" class="signup-forms" ng-model="user.name" required>
+      <div ng-show="signup.$submitted">
+        <p class="error-message" ng-show="signup.userName.$error.required">Por favor ingrese su nombre.</p>
+      </div>
+      <label for="last-name" class="signup-data">Apellido</label>
+      <input id="last-name" name="userLastName" type="text" class="signup-forms" ng-model="user.lastName" required>
+      <div ng-show="signup.$submitted">
+        <p class="error-message" ng-show="signup.userLastName.$error.required">Por favor ingrese su apellido.</p>
+      </div>
+      <label for="email" class="signup-data">Email</label>
+      <input name="userEmail" class ="signup-forms" type="text" id="email" ng-model="user.email" ng-pattern="$ctrl.emailValidation" required/>
+      <div ng-show="signup.$submitted || signup.userEmail.$touched">
+        <p class="error-message" ng-show="signup.$submitted && signup.userEmail.$error.required">Por favor ingrese su email.</p>
+        <p class="error-message" ng-show="signup.userEmail.$error.pattern">Por favor ingrese un email válido.</p>
+      </div>
+      <label for="password" class="signup-data">Password</label>
+      <input class ="signup-forms" type="password" id="password" name="userPassword" ng-model="user.password" ng-minlength= "8" ng-maxlength="52" ng-pattern="$ctrl.validPassword" required/>
+      <div ng-show="signup.$submitted || signup.userPassword.$touched" >
+        <p class="error-message" ng-show="signup.userPassword.$error.minlength">La contraseña es muy corta</p>
+        <p class="error-message" ng-show="signup.userPassword.$error.maxlength">La contraseña es muy larga</p>
+        <p class="error-message" ng-show="signup.$submitted && signup.userPassword.$error.required">Por favor ingrese su contraseña.</p>
+        <p class="error-message" ng-show="signup.userPassword.$error.password">Por favor ingrese una contraseña válida.</p>
+      </div>
+      <label for="password" class="signup-data">Confirmación de Password</label>
+      <input id="passwordConfirm" name="passwordConfirm" type="password" class="signup-forms" ng-model="user.passwordConfirm" compare-to="user.password" required>
+      <div ng-show="signup.$submitted || signup.userPassword.$touched">
+        <p class="error-message" ng-show="signup.passwordConfirm.$invalid">La contraseña no coincide.</p>
+      </div>
+      <button class="login" type="submit" >Sign Up</button>
+    </form>
+    <a class ="signup" ui-sref="login">login</a>
+  </div>
+</div>

@@ -1,0 +1,280 @@
+$tablet-width : 1024px;
+$mobile-width: 1023px;
+$badge-height: 118px;
+$badge-width: 84px;
+
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.title-cover {
+  height: 39px;
+  width: 790px;
+  color: $strong-black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 0 0 12px 60px;
+}
+
+.genre-cover {
+  height: 30px;
+  width: 298px;
+  color: $equalizer-grey;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-top: 20px;
+  margin-left: 10px;
+}
+
+.details {
+  border-top: 4px solid $earls-green;
+  width: 540px;
+  margin-left: 62px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-cover {
+  height: 22px;
+  width: 374px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 36px;
+  strong {
+    color: $strong-black;
+    padding-right: 8px;
+    font-weight: 700;
+  }
+}
+
+.image-cover {
+  width: 261px;
+  height: 368px;
+  margin: 24px 0 0 24px;
+}
+
+.book-cover {
+  height: 425px;
+  width: 900px;
+  background-color: $white;
+  box-shadow: 4px 4px 10px 0 $shadow;
+  margin: 15px 0 0 150px;
+  display: flex;
+}
+
+.badge {
+  height: 118px;
+  width: 84px;
+  transform: rotate(15deg);
+  position: absolute;
+  left: 354px;
+  top: 40px;
+}
+
+.back-button {
+  height: 20px;
+  width: 59px;
+  color: $strong-black;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  padding-top: 5px;
+  padding-left: 30px;
+  flex-direction: row;
+  &:before {
+    content: url('./../assets/back-arrow-20.png');
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+  }
+}
+
+@media only screen and (width:$tablet-width){
+  .cover-container {
+    grid-column-start: 2;
+  }
+  
+  .title-cover {
+    height: 39px;
+    width: 510px;
+    color: $strong-black;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 20px 0 12px 49px;
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+  }
+  
+  .genre-cover {
+  	height: 30px;
+  	width: 98px;
+  	color: $equalizer-grey;
+  	font-size: 24px;
+  	font-weight: 700;
+  	line-height: 28px;
+  	margin-left: 58px;
+  }
+  
+  .details {
+  	border-top: 0;
+  	width: 540px;
+  	padding-top: 136px;
+  	margin-left: 52px;
+  }
+  
+  
+  .detail {
+  	height: 22px;
+  	width: 394px;
+  	font-size: 20px;
+  	line-height: 24px;
+  	margin-bottom: 36px;
+  	strong {
+  		color: $equalizer-black;
+  		padding-right: 8px;
+  	}
+  }
+  
+  .image-cover {
+  	width: 261px;
+  	height: 368px;
+  	margin-left: 24px;
+  	grid-column-start: 1;
+  	margin-top: 125px;
+  }
+  
+  .book-cover {
+  	height: 569px;
+  	width: 853px;
+  	background-color: $white;
+  	box-shadow: 4px 4px 10px 0 $shadow;
+  	margin: 30px 0 0 30px;
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 1fr;
+  }
+  
+  .badge {
+  	height: $badge-height;
+  	width: $badge-width;
+  	transform: rotate(15deg);
+  	position: absolute;
+  	left: 250px;
+  	top: 140px;
+  }
+  
+  .back-button {
+  	height: 20px;
+  	width: 59px;
+  	color: $strong-black;
+  	font-size: 20px;
+  	line-height: 24px;
+  	display: flex;
+  	padding-top: 5px;
+  	padding-left: 30px;
+  	flex-direction: row;
+    &:before {
+      content: url('./../assets/back-arrow-20.png');
+      height: 20px;
+      width: 20px;
+      padding-right: 5px;
+    }
+  }
+
+}	
+
+@media only screen and (max-width:$mobile-width){
+  .title-cover {
+    height: 39px;
+    width: 351px;
+    color: $strong-black;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 275px 0 0 17px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+  }
+  
+  .genre-cover {
+    height: 16px;
+    width: 103px;
+    color: $equalizer-grey;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    grid-row-start: 3;
+    padding-top: 10px;
+  }
+  
+  .details {
+    border-top: 4px solid $earls-green;
+    width: 300px;
+    margin: 0px 0 0 18px;
+    grid-row-start: 4;
+    padding-top: 25px;  
+  }
+  
+  .detail-cover {
+  	height: 22px;
+  	width: 283px;
+  	font-size: 14px;
+  	line-height: 24px;
+  	margin-bottom: 18px;
+  	strong {
+  		color: $strong-black;
+  		padding-right: 8px;
+  	}
+  }
+  
+  .image-cover {
+  	width: 212px;
+  	height: 298px;
+  	margin:38px 0 0 62px;
+  }
+  
+  .book-cover {
+  	height: 570px;
+  	width: 336px;
+  	background-color: $white;
+  	box-shadow: 4px 4px 10px 0 $shadow;
+    display:grid;
+  	grid-template-rows: 71px 300px 53px 144px;
+  	grid-template-columns: 1fr;
+    margin-left: 60px;
+  	
+  }
+  
+  .badge {
+  	height: calc(#{$badge-height} * 0.7);
+  	width: calc(#{$badge-width} *0.7);
+  	transform: rotate(15deg);
+  	margin-left: 10px;
+    left: 284px;
+  }
+  
+  .back-button {
+    height: 20px;
+    width: 59px;
+    color: $strong-black;
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    top: 622px;
+    left: 143px;
+    &:before {
+      content: url('./../assets/back-arrow-20.png');
+      height: 20px;
+      width: 20px;
+      padding-right: 5px;
+    }
+  }
+}
